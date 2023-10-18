@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    font-family: "Monserrat", sans-serif;
+    font-weight: 400;
+    background: #120F1C;
+}
+
+nav{
+    background: #161321;
+}
+.menu-ul{
+    background: #161321;
+}
+
+main{
+    position: relative;
+    z-index: -1;
+    min-height: 100vh;
+}
+footer{
+    background: #070415;
+}
