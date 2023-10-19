@@ -7,8 +7,7 @@ body{
     font-weight: 400;
     background: #120F1C;
 }
-
-nav{
+header{
     background: #161321;
 }
 .menu-ul{
@@ -18,8 +17,11 @@ nav{
 main{
     position: relative;
     z-index: -1;
-    min-height: 100vh;
+    min-height: calc(100vh - 130px);
 }
 footer{
     background: #070415;
+}
+.bg-nav{
+    background: #161321;
 }

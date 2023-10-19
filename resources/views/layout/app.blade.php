@@ -11,8 +11,11 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-<header>
-    <nav class="p-5 text-white shadow md:flex md:items-center md:justify-between fixed w-full">
+<header class="bg-nav">
+    <nav class="p-5 text-white bg-nav shadow md:flex md:items-center md:justify-between mx-auto
+    2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
+    sm:max-w-[540px] fixed top-0 left-0 right-0 md:static md:bg-nav md:shadow-none z-50 pb-6
+    ">
         <div class="flex justify-between items-center">
             <span class="text-2xl cursor-pointer">
                 <img class="h-8 inline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixYgLSSVCB9SR2aVkiQrahyp5aKUjECFFqEGLLCJNcw&s" alt="">
@@ -41,7 +44,9 @@
         </ul>
     </nav>
 </header>
-<main>
+<main class="p-4 pt-24 md:pt-4 mx-auto
+    2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
+    sm:max-w-[540px]">
     @yield('content')
 </main>
 <footer class="p-4 text-white">
@@ -68,8 +73,8 @@
                 list.classList.remove('opacity-100');
             })
         })
-    }
 
+    }
 </script>
 </body>
 </html>
