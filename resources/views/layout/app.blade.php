@@ -11,15 +11,15 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-<header class="bg-nav">
+<header class="bg-nav h-[75px]">
     <nav class="p-5 text-white bg-nav shadow md:flex md:items-center md:justify-between mx-auto
     2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
-    sm:max-w-[540px] fixed top-0 left-0 right-0 md:static md:bg-nav md:shadow-none z-50 pb-6
+    sm:max-w-[540px] fixed top-0 left-0 right-0
     ">
         <div class="flex justify-between items-center">
             <span class="text-2xl cursor-pointer">
                 <img class="h-8 inline" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQixYgLSSVCB9SR2aVkiQrahyp5aKUjECFFqEGLLCJNcw&s" alt="">
-                Beto Villarroel
+               Beto
             </span>
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
                 <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
@@ -36,7 +36,7 @@
                 <a href="/#about" class="text-xl hover:text-purple-500 duration-500">ABOUT</a>
             </li>
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
-                <a href="/#cv" class="text-xl hover:text-purple-500 duration-500">CV</a>
+                <a href="/#cv" class="text-xl hover:text-purple-500 duration-500 target:underline">CV</a>
             </li>
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
                 <a href="#" class="text-xl hover:text-purple-500 duration-500">BLOG</a>
@@ -44,11 +44,10 @@
         </ul>
     </nav>
 </header>
-<main class="p-4 pt-24 md:pt-4 mx-auto
-    2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
-    sm:max-w-[540px]">
+<main >
     @yield('content')
 </main>
+
 <footer class="p-4 text-white">
     <div class="mx-auto text-center">
         <p>Copyright 2024    © Beto all rights reserved.</p>
@@ -73,7 +72,6 @@
                 list.classList.remove('opacity-100');
             })
         })
-
     }
 </script>
 </body>
