@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('title', 'Home')
 @section('content')
-    <div class="p-4 pt-24 md:pt-4 mx-auto
+    <div id="inicio" class="p-4 pt-24 md:pt-4 mx-auto
     2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
     sm:max-w-[540px]">
         <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] py-[80px] px-4">
@@ -29,14 +29,14 @@
     2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
     sm:max-w-[540px]">
     </div>
-    <section id="service" class="2xl:py-[80px] py-[70px] bg-[#120f1c] relative">
+    <section id="skills" class="2xl:py-[80px] py-[70px] bg-[#120f1c] relative">
         <div class="banner text-center mb-[30px] aos-init aos-animate">
             <span class="text-[14px] text-[#ddd]">MEJORES SKILLS</span>
             <h2 class="text-center text-[#ddd] mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold">
                 Lo mejor que<span class="text-[#7963e0]">
                     Ofresco</span></h2>
         </div>
-        <div class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6">
+        <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6">
             <div class="grid lg:grid-cols-3 md:grid-cols-1 gap-[30px]">
                 <div class="transition-all rounded flex justify-start items-start aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                     <div class="pr-6 border-r border-[#7963e0] max-[480px]:hidden">
@@ -85,53 +85,205 @@
         </div>
         <div class="2xl:border-b 2xl:pt-24 2xl:border-[#27213b] lg:border-b lg:border-[#27213b] lg:pt-12 pt-0 flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] px-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"></div>
     </section>
-    <section id="about" class="bg-[#120f1c] 2xl:pb-[80px] pb-[70px]">
-        <div class="flex flex-wrap justify-between items-center mx-auto mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px]">
+    <section id="sobre-mi" class="bg-[#120f1c] 2xl:pb-[80px] pb-[70px]">
+        <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px]">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px] px-6 max-[320px]:px-[0px]">
                 <div class="transition-all relative aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                     <img src="{{asset('img/img-01.jpg')}}" alt="about-img-1" class="w-full rounded-lg">
                 </div>
                 <div class="transition-all aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
-                    <div class="banner mb-[30px]">
-                        <span class="text-[14px] text-[#ddd]">ABOUT US</span>
+                    <div class="banner mb-3">
+                        <span class="text-[14px] text-[#ddd]">SOBRE MI</span>
                         <h2 class="text-white mt-[5px] 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold">
-                            Creativity bleeds from the pen of <span class="text-[#7963e0]">inspiration</span></h2>
+                            Apasionado, Experto, Colaborativo, Creativo y sobre todo <span class="text-[#7963e0]">Comprometido</span></h2>
                     </div>
-                    <p class="text-[16px] text-[#777] 2xl:mb-[31px] xl:mb-[35px] lg:mb-[10px] mb-[25px]">Lorem ipsum
-                        dolor sit amet consectetur adipisicing
-                        elit. Ducimus praesentium totam error consequatur aperiam iusto neque fuga velit.</p>
+                    <p class="text-[16px] text-[#777] 2xl:mb-[31px] xl:mb-[35px] lg:mb-[10px] mb-[25px]">Soy un apasionado programador con una obsesión por encontrar soluciones ingeniosas a cualquier desafío, ya sea en el emocionante mundo del desarrollo frontend o en las profundidades del backend. Para mí, la programación no es solo un trabajo, sino una verdadera pasión.</p>
                     <div class="border border-[#27213b] p-[24px] rounded-lg">
                         <div class="box-border flex justify-between max-[400px]:block">
                             <div class="left">
                                 <div class="name">
-                                    <span class="text-white text-[16px] leading-[28px] font-bold">Full Name :</span><br>
-                                    <span class="detail text-[14px] leading-[28px] text-[#777]">Richard Lord </span>
+                                    <span class="text-white text-[16px] leading-[28px] font-bold">Nombre Completo :</span><br>
+                                    <span class="detail text-[14px] leading-[28px] text-[#777]">Yiye Albert Villarroel</span>
                                 </div>
                                 <div class="age pt-[20px]">
-                                    <span class="text-white text-[16px] leading-[28px] font-bold">Age :</span><br>
-                                    <span class="detail text-[14px] leading-[28px] text-[#777]">30 Years</span>
+                                    <span class="text-white text-[16px] leading-[28px] font-bold">Edad</span><br>
+                                    <span class="detail text-[14px] leading-[28px] text-[#777]">33 Años</span>
                                 </div>
                             </div>
                             <div class="right">
                                 <div class="ph">
-                                    <span class="text-white text-[16px] leading-[28px] font-bold">Phone No :</span><br>
-                                    <span class="detail text-[14px] leading-[28px] text-[#777]">+00 987654321</span>
+                                    <span class="text-white text-[16px] leading-[28px] font-bold">Telefono</span><br>
+                                    <span class="detail text-[14px] leading-[28px] text-[#777]">+54 1154825028</span>
                                 </div>
                                 <div class="email pt-[20px]">
                                     <span class="text-white text-[16px] leading-[28px] font-bold">Email :</span><br>
-                                    <span class="detail text-[14px] leading-[28px] text-[#777]">example@example.com</span>
+                                    <span class="detail text-[14px] leading-[28px] text-[#777]">yiyevp@gmail.com</span>
                                 </div>
                             </div>
                         </div>
                         <div class="bottom pt-[20px]">
-                            <span class="text-white text-[16px] leading-[28px] font-bold">Address :</span>
-                            <span class="detail text-[14px] leading-[28px] text-[#777]">Ruami mellow moraes,- Salvador,
-                                Brazil</span>
+                            <span class="text-white text-[16px] font-bold">Github</span>
+                            <a href="https://github.com/be-tho/" target="_blank" class="cursor-pointer">
+                                <span class="detail text-[14px] text-[#777]">Be-tho</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <section id="portfolio" class="section-Portfolio 2xl:py-[80px] py-[70px]">
+        <div class="banner text-center mb-[30px] aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+            <h2 class="text-center mt-[5px] text-white 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold">
+                Mi <span class="text-[#7963e0]"> PORTFOLIO</span></h2>
+        </div>
+        <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6">
+            <div class="m-b-minus-24px w-full">
+                <div class="portfolio-content aos-init aos-animate" id="MixItUpDA2FB7" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                    <div class="portfolio-tabs mb-[30px]">
+                        <ul class="2xl:flex xl:flex md:flex sm:block place-content-center text-center">
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block active mixitup-control-active" data-filter="all">
+                                ALL</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".design">DESIGN</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".development">DEVELOPMENT</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".graphics">GRAPHICS</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".templates">Templates</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-content-items">
+                        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]">
+                            <div class="mix graphics templates">
+                                <div class="portfolio-img truncate rounded-2xl relative">
+                                    <img src="{{asset('img/portfolio/work-1.jpg')}}" alt="graphics" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                        <span class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1">3D
+                                            Graphics</span>
+                                        <span class="bg-black rounded-full text-white font-normal text-[12px] px-2 py-1">Templates</span>
+                                    </h3>
+                                    <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                        <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                            <a href="#" class="text-white text-sm flex items-center">Nitro - Car
+                                                Service</a>
+                                            <a href="assets/img/portfolio/img-1.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                                <p class="hidden">.</p>
+                                                <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix design">
+                                <div class="portfolio-img truncate rounded-2xl relative">
+                                    <img src="{{asset('img/portfolio/work-2.jpg')}}" alt="design" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Web
+                                            Design</span>
+                                    </h3>
+                                    <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                        <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                            <a href="#" class="text-white text-sm flex items-center">Boros -
+                                                Artificial Intelligence</a>
+                                            <a href="assets/img/portfolio/img-2.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                                <p class="hidden">.</p>
+                                                <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix design">
+                                <div class="portfolio-img truncate rounded-2xl relative">
+                                    <img src="{{asset('img/portfolio/work-3.jpg')}}" alt="design" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Web
+                                            Design</span>
+                                    </h3>
+                                    <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                        <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                            <a href="#" class="text-white text-sm flex items-center">Mila - Virtual
+                                                Reality</a>
+                                            <a href="assets/img/portfolio/img-3.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                                <p class="hidden">.</p>
+                                                <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix development">
+                                <div class="portfolio-img truncate rounded-2xl relative">
+                                    <img src="{{asset('img/portfolio/work-4.jpg')}}" alt="development" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Development</span>
+                                    </h3>
+                                    <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                        <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                            <a href="#" class="text-white text-sm flex items-center">Sen - Hotel
+                                                Website</a>
+                                            <a href="assets/img/portfolio/img-4.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                                <p class="hidden">.</p>
+                                                <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix templates design">
+                                <div class="portfolio-img truncate rounded-2xl relative">
+                                    <img src="{{asset('img/portfolio/work-5.jpg')}}" alt="templates" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Templates</span>
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Web
+                                            Design</span>
+                                    </h3>
+                                    <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                        <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                            <a href="#" class="text-white text-sm flex items-center">Ekka -
+                                                eCommerce template</a>
+                                            <a href="assets/img/portfolio/img-1.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                                <p class="hidden">.</p>
+                                                <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix development graphics">
+                                <div class="portfolio-img truncate rounded-2xl relative">
+                                    <img src="{{asset('img/portfolio/work-5.jpg')}}" alt="development" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
+                                    <h3 class="top-contain absolute top-[15px] right-[15px]">
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">Development</span>
+                                        <span class="bg-black rounded-full font-normal text-white text-[12px] px-2 py-1">3D
+                                            Graphics</span>
+                                    </h3>
+                                    <div class="bottom-contain absolute bottom-4 left-4 right-4">
+                                        <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
+                                            <a href="#" class="text-white text-sm flex items-center">Bukki - Teck
+                                                crafts</a>
+                                            <a href="assets/img/portfolio/img-2.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                                <p class="hidden">.</p>
+                                                <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection

@@ -14,7 +14,7 @@
 <header class="bg-nav h-[75px]">
     <nav class="p-5 text-white bg-nav shadow md:flex md:items-center md:justify-between mx-auto
     2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
-    sm:max-w-[540px] fixed top-0 left-0 right-0
+    sm:max-w-[540px] top-0 left-0 right-0
     ">
         <div class="flex justify-between items-center">
             <span class="text-2xl cursor-pointer">
@@ -27,19 +27,16 @@
         </div>
         <ul class="menu-ul md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
-                <a href="/#home" class="text-xl hover:text-purple-500 duration-500 cursor-pointer">HOME</a>
+                <a href="/#inicio" class="text-xl hover:text-purple-500 duration-500 cursor-pointer">Inicio</a>
             </li>
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
-                <a href="/#service" class="text-xl hover:text-purple-500 duration-500">SERVICE</a>
+                <a href="/#skills" class="text-xl hover:text-purple-500 duration-500">Skills</a>
             </li>
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
-                <a href="/#about" class="text-xl hover:text-purple-500 duration-500">ABOUT</a>
+                <a href="/#sobre-mi" class="text-xl hover:text-purple-500 duration-500">Sobre Mi</a>
             </li>
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
-                <a href="/#cv" class="text-xl hover:text-purple-500 duration-500 target:underline">CV</a>
-            </li>
-            <li class="mx-4 my-6 md:my-0 cursor-pointer">
-                <a href="#" class="text-xl hover:text-purple-500 duration-500">BLOG</a>
+                <a href="/#portfolio" class="text-xl hover:text-purple-500 duration-500">Portfolio</a>
             </li>
         </ul>
     </nav>
@@ -54,7 +51,7 @@
     </div>
 {{--    boton para hacer scroll al top --}}
     <div class="fixed bottom-5 right-5">
-        <a href="#home" class="text-3xl text-white hover:text-purple-500 duration-500">
+        <a href="#top" class="text-3xl text-white hover:text-purple-500 duration-500">
             <ion-icon name="arrow-up-circle-outline"></ion-icon>
         </a>
     </div>
