@@ -1,10 +1,10 @@
 @extends('layout.app')
 @section('title', 'Home')
 @section('content')
-    <div id="inicio" class="p-4 pt-24 md:pt-4 mx-auto
+    <div id="inicio" class="p-4 pt-2 md:pt-20 mx-auto
     2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] max-[320px]:px-[12px]
     sm:max-w-[540px]">
-        <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] py-[80px] px-4">
+        <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] py-5 md:pb-20 px-4">
             <div class="w-full h-[70vh] max-[320px]:h-[50vh] flex items-center px-2 2xl:max-w-lg xl:max-w-lg lg:max-w-lg lg:w-1/2 lg:mx-0 md:max-w-lg md:w-1/2 md:mx-0 2xl:w-1/2 xl:w-1/2 sm:items-center">
                 <div class="text-center 2xl:text-left xl:text-left lg:text-left md:text-left h-72">
                     <span class="text-[#7963e0] text-lg font-bold">Hola, me llamo </span>

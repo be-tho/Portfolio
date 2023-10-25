@@ -49,10 +49,9 @@
     <div class="mx-auto text-center">
         <p>Copyright 2024    © Beto all rights reserved.</p>
     </div>
-{{--    boton para hacer scroll al top --}}
-    <div class="fixed bottom-5 right-5">
-        <a href="#top" class="text-3xl text-white hover:text-purple-500 duration-500">
-            <ion-icon name="arrow-up-circle-outline"></ion-icon>
+    <div class="fixed bottom-5 right-5 z-20">
+        <a href="#top" class="text-2xl text-white duration-500">
+            <ion-icon name="arrow-up-outline" class="bg-[#7963e0] rounded-full p-2"></ion-icon>
         </a>
     </div>
 </footer>
