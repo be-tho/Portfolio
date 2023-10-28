@@ -503,9 +503,6 @@ video {
 .bottom-5 {
   bottom: 1.25rem;
 }
-.bottom-6 {
-  bottom: 1.5rem;
-}
 .left-0 {
   left: 0px;
 }
@@ -520,9 +517,6 @@ video {
 }
 .right-5 {
   right: 1.25rem;
-}
-.right-6 {
-  right: 1.5rem;
 }
 .right-\[15px\] {
   right: 15px;
@@ -600,9 +594,6 @@ video {
 .hidden {
   display: none;
 }
-.h-10 {
-  height: 2.5rem;
-}
 .h-72 {
   height: 18rem;
 }
@@ -618,11 +609,11 @@ video {
 .max-h-full {
   max-height: 100%;
 }
+.min-h-\[750px\] {
+  min-height: 750px;
+}
 .w-1\/2 {
   width: 50%;
-}
-.w-10 {
-  width: 2.5rem;
 }
 .w-8 {
   width: 2rem;
@@ -722,6 +713,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(18 15 28 / var(--tw-bg-opacity));
 }
+.bg-\[\#161321\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 19 33 / var(--tw-bg-opacity));
+}
 .bg-\[\#7963e0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(121 99 224 / var(--tw-bg-opacity));
@@ -754,9 +749,6 @@ video {
 }
 .p-\[24px\] {
   padding: 24px;
-}
-.p-3 {
-  padding: 0.75rem;
 }
 .px-2 {
   padding-left: 0.5rem;
@@ -982,6 +974,41 @@ footer{
 }
 .bg-nav{
     background: #161321;
+}
+
+.hide{
+    display: none;
+    animation: fade_out_hide 0.5s;
+}
+.show{
+    display: block;
+    animation: fade_in_show 0.5s;
+}
+
+#portfolio{
+    min-height: calc(100vh - 130px);
+}
+@keyframes fade_in_show {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes fade_out_hide {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0)
+    }
 }
 .hover\:-rotate-12:hover {
   --tw-rotate: -12deg;

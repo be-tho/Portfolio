@@ -132,27 +132,27 @@
             </div>
         </div>
     </section>
-    <section id="portfolio" class="section-Portfolio 2xl:py-[80px] py-[70px]">
-        <div class="banner text-center mb-[30px] aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+    <section id="portfolio" class="section-Portfolio 2xl:py-[80px] py-[70px] bg-[#161321]">
+        <div class="banner text-center mb-[30px] aos-init aos-animate">
             <h2 class="text-center mt-[5px] text-white 2xl:text-[35px] xl:text-[33px] lg:text-[30px] md:text-[26px] sm:text-[24px] text-[22px] font-bold">
                 Mi <span class="text-[#7963e0]"> PORTFOLIO</span></h2>
         </div>
         <div class="flex flex-wrap justify-between items-center mx-auto 2xl:max-w-[1320px] xl:max-w-[1140px] lg:max-w-[960px] md:max-w-[720px] sm:max-w-[540px] max-[320px]:px-[12px] px-6">
             <div class="m-b-minus-24px w-full">
-                <div class="portfolio-content aos-init aos-animate" id="MixItUpDA2FB7" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                <div class="portfolio-content aos-init aos-animate">
                     <div class="portfolio-tabs mb-[30px]">
                         <ul class="2xl:flex xl:flex md:flex sm:block place-content-center text-center">
-                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block active mixitup-control-active" data-filter="all">
-                                ALL</li>
-                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".design">DESIGN</li>
-                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".development">DEVELOPMENT</li>
-                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".graphics">GRAPHICS</li>
-                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block" data-filter=".templates">Templates</li>
+                            <li id="todo" class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block active mixitup-control-active">
+                                TODO</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block " id="diseno">DISEÑO</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block " id="desarrollo">DESARROLLO</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block transition-all ease-in duration-500">GRAFICOS</li>
+                            <li class="text-[14px] text-[#ddd] 2xl:mx-[10px] sm:mx-[0px] px-[10px] leading-[11px] font-semibold hover:text-[#7963e0] cursor-pointer inline-block">TEMPLATES</li>
                         </ul>
                     </div>
                     <div class="portfolio-content-items">
                         <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-[30px]">
-                            <div class="mix graphics templates">
+                            <div class="mix graphics templates proyecto desarrollo">
                                 <div class="portfolio-img truncate rounded-2xl relative">
                                     <img src="{{asset('img/portfolio/work-1.jpg')}}" alt="graphics" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
                                     <h3 class="top-contain absolute top-[15px] right-[15px]">
@@ -174,7 +174,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mix design">
+                            <div class="mix proyecto diseno">
                                 <div class="portfolio-img truncate rounded-2xl relative">
                                     <img src="{{asset('img/portfolio/work-2.jpg')}}" alt="design" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
                                     <h3 class="top-contain absolute top-[15px] right-[15px]">
@@ -195,7 +195,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mix design">
+                            <div class="mix desarrollo proyecto">
                                 <div class="portfolio-img truncate rounded-2xl relative">
                                     <img src="{{asset('img/portfolio/work-3.jpg')}}" alt="design" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
                                     <h3 class="top-contain absolute top-[15px] right-[15px]">
@@ -216,7 +216,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mix development">
+                            <div class="mix development proyecto">
                                 <div class="portfolio-img truncate rounded-2xl relative">
                                     <img src="{{asset('img/portfolio/work-4.jpg')}}" alt="development" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
                                     <h3 class="top-contain absolute top-[15px] right-[15px]">
@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mix templates design">
+                            <div class="mix templates diseno proyecto">
                                 <div class="portfolio-img truncate rounded-2xl relative">
                                     <img src="{{asset('img/portfolio/work-5.jpg')}}" alt="templates" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
                                     <h3 class="top-contain absolute top-[15px] right-[15px]">
@@ -248,7 +248,7 @@
                                         <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
                                             <a href="#" class="text-white text-sm flex items-center">Ekka -
                                                 eCommerce template</a>
-                                            <a href="assets/img/portfolio/img-1.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                            <a href="assets/img/portfolio/img-1.jpg" class="text-white text-sm grid justify-items-end">
                                                 <p class="hidden">.</p>
                                                 <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
                                                     <i class="fa-solid fa-arrow-right"></i>
@@ -258,7 +258,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="mix development graphics">
+                            <div class="mix development graphics proyecto">
                                 <div class="portfolio-img truncate rounded-2xl relative">
                                     <img src="{{asset('img/portfolio/work-5.jpg')}}" alt="development" class="w-full transform hover:bg-blue-600 transition duration-500 hover:-rotate-12 hover:scale-125">
                                     <h3 class="top-contain absolute top-[15px] right-[15px]">
@@ -270,7 +270,7 @@
                                         <div class="overlay-info px-4 py-2 bg-black bg-opacity-60 rounded-xl grid grid-cols-2 gap-[30px] place-content-between">
                                             <a href="#" class="text-white text-sm flex items-center">Bukki - Teck
                                                 crafts</a>
-                                            <a href="assets/img/portfolio/img-2.jpg" data-fancybox="gallery" class="text-white text-sm grid justify-items-end">
+                                            <a href="assets/img/portfolio/img-2.jpg" class="text-white text-sm grid justify-items-end">
                                                 <p class="hidden">.</p>
                                                 <span class="bg-[#7963e0] h-8 w-8 flex justify-center items-center rounded-md">
                                                     <i class="fa-solid fa-arrow-right"></i>

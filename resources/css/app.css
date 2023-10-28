@@ -23,3 +23,38 @@ footer{
 .bg-nav{
     background: #161321;
 }
+
+.hide{
+    display: none;
+    animation: fade_out_hide 0.5s;
+}
+.show{
+    display: block;
+    animation: fade_in_show 0.5s;
+}
+
+#portfolio{
+    min-height: calc(100vh - 130px);
+}
+@keyframes fade_in_show {
+    0% {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes fade_out_hide {
+    0% {
+        opacity: 1;
+        transform: scale(1)
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0)
+    }
+}

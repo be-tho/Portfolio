@@ -2163,6 +2163,56 @@ module.exports = {
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+//lista de proyectos
+var todo = document.getElementById('todo');
+var desarrollo = document.getElementById('desarrollo');
+var diseno = document.getElementById('diseno');
+var proyectos = document.querySelectorAll('.proyecto');
+desarrollo.addEventListener('click', function () {
+  proyectos.forEach(function (proyecto) {
+    proyecto.classList.remove('show');
+    proyecto.classList.add('hide');
+  });
+  var desarrolloProyectos = document.querySelectorAll('.desarrollo');
+  setTimeout(function () {
+    desarrolloProyectos.forEach(function (proyecto) {
+      proyecto.classList.remove('hide');
+      proyecto.classList.add('show');
+    });
+  }, 200);
+});
+diseno.addEventListener('click', function () {
+  proyectos.forEach(function (proyecto) {
+    proyecto.classList.remove('show');
+    proyecto.classList.add('hide');
+  });
+  var disenoProyectos = document.querySelectorAll('.diseno');
+  setTimeout(function () {
+    disenoProyectos.forEach(function (proyecto) {
+      proyecto.classList.remove('hide');
+      proyecto.classList.add('show');
+    });
+  }, 200);
+});
+
+//evitar la recarga de la pagina al hacer click en la seccion de todos los proyectos
+
+todo.addEventListener('click', function () {
+  //primero buscar si alguno tiene la clase show, si no la tiene, se la quitamos a todos
+  //luego de 10sg le agregamos la clase show a todos
+  proyectos.forEach(function (proyecto) {
+    proyecto.classList.remove('show');
+    proyecto.classList.add('hide');
+  });
+  //evitar el parpadeo de salto de pagina
+
+  setTimeout(function () {
+    proyectos.forEach(function (proyecto) {
+      proyecto.classList.remove('hide');
+      proyecto.classList.add('show');
+    });
+  }, 50);
+});
 
 /***/ }),
 

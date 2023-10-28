@@ -38,6 +38,11 @@
             <li class="mx-4 my-6 md:my-0 cursor-pointer">
                 <a href="/#portfolio" class="text-xl hover:text-purple-500 duration-500">Portfolio</a>
             </li>
+{{--            link para descargar cv--}}
+            <li class="mx-4 my-6 md:my-0 cursor-pointer">
+                <a download="Curriculum" href="{{asset('img/cv-albert-villarroel.pdf')}}" class="text-xl hover:text-purple-500 duration-500">Descargar CV</a>
+            </li>
+
         </ul>
     </nav>
 </header>
@@ -70,5 +75,6 @@
         })
     }
 </script>
+<script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
